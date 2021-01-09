@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iox-hh-F65">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HVd-yG-3bl">
+            <objects>
+                <viewController id="Iox-hh-F65" customClass="ViewController" customModule="Twittermenti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b2l-Hd-ygp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deK-LX-Rp2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="N3v-AM-SfB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEa-gc-NAc">
+                                                <rect key="frame" x="153" y="0.0" width="108" height="652"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-dJ-j2z">
+                                                <rect key="frame" x="0.0" y="707" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HS8-QH-py8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvn-Ci-AWu">
+                                                <rect key="frame" x="157.5" y="812" width="99" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="YDt-l2-x0N"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Predict!">
+                                                    <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="predictPressed:" destination="Iox-hh-F65" eventType="touchUpInside" id="zcO-1V-Teq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dbi-dJ-j2z" secondAttribute="trailing" id="dL7-1p-vbI"/>
+                                            <constraint firstItem="dbi-dJ-j2z" firstAttribute="leading" secondItem="N3v-AM-SfB" secondAttribute="leading" id="uZZ-8M-yfS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="N3v-AM-SfB" secondAttribute="trailing" id="VZV-9a-GRP"/>
+                                    <constraint firstItem="N3v-AM-SfB" firstAttribute="top" secondItem="deK-LX-Rp2" secondAttribute="top" id="np1-W5-l2F"/>
+                                    <constraint firstAttribute="bottom" secondItem="N3v-AM-SfB" secondAttribute="bottom" id="qaD-h0-Za3"/>
+                                    <constraint firstItem="N3v-AM-SfB" firstAttribute="leading" secondItem="deK-LX-Rp2" secondAttribute="leading" id="qd1-Mc-DZi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="deK-LX-Rp2" firstAttribute="top" secondItem="b2l-Hd-ygp" secondAttribute="top" id="Eb5-Cs-gve"/>
+                            <constraint firstItem="deK-LX-Rp2" firstAttribute="bottom" secondItem="UOC-IB-llL" secondAttribute="bottom" id="Erc-ho-hL8"/>
+                            <constraint firstItem="deK-LX-Rp2" firstAttribute="trailing" secondItem="UOC-IB-llL" secondAttribute="trailing" id="KvN-SZ-LmK"/>
+                            <constraint firstItem="deK-LX-Rp2" firstAttribute="leading" secondItem="UOC-IB-llL" secondAttribute="leading" id="zK5-hF-WVv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UOC-IB-llL"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="deK-LX-Rp2" id="QY6-l3-qrM"/>
+                        <outlet property="sentimentLabel" destination="LEa-gc-NAc" id="9FA-Cm-DPA"/>
+                        <outlet property="textField" destination="dbi-dJ-j2z" id="rSZ-mU-GK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LwQ-Nv-aMP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="80"/>
+        </scene>
+    </scenes>
+</document>
